@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.11.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>SqlitePass Database Objects: SqlitePassDbo: Class TSqlitePassDatabaseError</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TSqlitePassDatabaseError"></a><h1 class="cio">Class TSqlitePassDatabaseError</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="SqlitePassDbo.html">SqlitePassDbo</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TSqlitePassDatabaseError = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TSqlitePassDatabaseError</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Constructor <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#Create">Create</a></b>(Dataset: <a   href="SqlitePassDbo.TSqlitePassDataset.html">TSqlitePassDataset</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Constructor <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#Create">Create</a></b>(Database: <a   href="SqlitePassDbo.TSqlitePassDatabase.html">TSqlitePassDatabase</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Destructor <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#GetFirstError">GetFirstError</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#GetLastError">GetLastError</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#GetNextError">GetNextError</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#GetPriorError">GetPriorError</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#ShowError">ShowError</a></b>(const Msg: String; DlgType: TMsgDlgType = mtWarning; DlgButtons: TMsgDlgButtons = [mbOk]; HelpCtx: Longint = 0): Word; Virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#RaiseException">RaiseException</a></b>(const Msg: String; const ErrorCode: Integer = -1; Component: TComponent = nil; VerboseLevel: <a   href="SqlitePassDbo.html#TSqlitePassVerboseLevel">TSqlitePassVerboseLevel</a> = <a   href="SqlitePassConst.html#vlLogAndShow">vlLogAndShow</a>); Virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#RaiseExceptionFmt">RaiseExceptionFmt</a></b>(const Msg: String; const Args: array of const; const ErrorCode: Integer = -1; Component: TComponent = nil; VerboseLevel: <a   href="SqlitePassDbo.html#TSqlitePassVerboseLevel">TSqlitePassVerboseLevel</a> = <a   href="SqlitePassConst.html#vlLogAndShow">vlLogAndShow</a>); Virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#SaveToFile">SaveToFile</a></b>(FileName: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#ShowErrorDialog">ShowErrorDialog</a></b>(ErrorMsg: String = '');</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#TrackerStart">TrackerStart</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#TrackerStop">TrackerStop</a></b>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#CurrentError">CurrentError</a></b>: <a   href="SqlitePassDbo.TSqlitePassDatabaseErrorItem.html">TSqlitePassDatabaseErrorItem</a> Read FCurrentError;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#CurrentErrorIndex">CurrentErrorIndex</a></b>: Integer Read FCurrentErrorIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#Database">Database</a></b>: <a   href="SqlitePassDbo.TSqlitePassDatabase.html">TSqlitePassDatabase</a> Read FDatabase;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#Dataset">Dataset</a></b>: <a   href="SqlitePassDbo.TSqlitePassDataset.html">TSqlitePassDataset</a> Read FDataset;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="SqlitePassDbo.TSqlitePassDatabaseError.html#ErrorList">ErrorList</a></b>: TList Read FErrorList;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>Constructor <b>Create</b>(Dataset: <a   href="SqlitePassDbo.TSqlitePassDataset.html">TSqlitePassDataset</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>Constructor <b>Create</b>(Database: <a   href="SqlitePassDbo.TSqlitePassDatabase.html">TSqlitePassDatabase</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&mdash;&ndash; Constructor / Destructor &mdash;&ndash;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>Destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetFirstError"></a><code>function <b>GetFirstError</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetLastError"></a><code>function <b>GetLastError</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetNextError"></a><code>function <b>GetNextError</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPriorError"></a><code>function <b>GetPriorError</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShowError"></a><code>function <b>ShowError</b>(const Msg: String; DlgType: TMsgDlgType = mtWarning; DlgButtons: TMsgDlgButtons = [mbOk]; HelpCtx: Longint = 0): Word; Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&mdash;&ndash; Procedures / Functions &mdash;&ndash;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RaiseException"></a><code>procedure <b>RaiseException</b>(const Msg: String; const ErrorCode: Integer = -1; Component: TComponent = nil; VerboseLevel: <a   href="SqlitePassDbo.html#TSqlitePassVerboseLevel">TSqlitePassVerboseLevel</a> = <a   href="SqlitePassConst.html#vlLogAndShow">vlLogAndShow</a>); Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RaiseExceptionFmt"></a><code>procedure <b>RaiseExceptionFmt</b>(const Msg: String; const Args: array of const; const ErrorCode: Integer = -1; Component: TComponent = nil; VerboseLevel: <a   href="SqlitePassDbo.html#TSqlitePassVerboseLevel">TSqlitePassVerboseLevel</a> = <a   href="SqlitePassConst.html#vlLogAndShow">vlLogAndShow</a>); Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>procedure <b>SaveToFile</b>(FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ShowErrorDialog"></a><code>procedure <b>ShowErrorDialog</b>(ErrorMsg: String = '');</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TrackerStart"></a><code>procedure <b>TrackerStart</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TrackerStop"></a><code>procedure <b>TrackerStop</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CurrentError"></a><code>property <b>CurrentError</b>: <a   href="SqlitePassDbo.TSqlitePassDatabaseErrorItem.html">TSqlitePassDatabaseErrorItem</a> Read FCurrentError;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CurrentErrorIndex"></a><code>property <b>CurrentErrorIndex</b>: Integer Read FCurrentErrorIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Database"></a><code>property <b>Database</b>: <a   href="SqlitePassDbo.TSqlitePassDatabase.html">TSqlitePassDatabase</a> Read FDatabase;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Dataset"></a><code>property <b>Dataset</b>: <a   href="SqlitePassDbo.TSqlitePassDataset.html">TSqlitePassDataset</a> Read FDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ErrorList"></a><code>property <b>ErrorList</b>: TList Read FErrorList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.11.0</a> on 2010-09-10 15:54:37</em>
+</span>
+</body></html>
